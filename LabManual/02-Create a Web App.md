@@ -5,7 +5,7 @@ lab:
     module: 'Module2 Azureのコアサービス'
 ---
 
-# ラボ 02: Webアプリを作成する
+# ラボ 02: Webアプリを作成する（10分）
 
 このラボでは、Azure Portalを使用してApp Serviceを作成し、Webページを公開します。
 

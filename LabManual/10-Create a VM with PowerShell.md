@@ -67,7 +67,7 @@ wts:
 3. 次のコマンドを実行して、仮想マシンの名前、リソース グループ、場所、状態などの情報を取得します。**PowerState** が「**VM running**」になっていることを確認します。
 
     ```PowerShell
-    Get-AzVM -name az900-10-vm1 -status | Format-Table -autosize
+    Get-AzVM -name az900-10-vm1 -status -ResourceGroupName AzureStudent## | Format-Table -autosize
     ```
 
 4. 次のコマンドを使用して仮想マシンを停止します（**##**の部分は自身の受講番号に書き換えて実行）。 
@@ -80,7 +80,7 @@ wts:
 6. 再度、仮想マシンの状態を確認します。**PowerState** が「**VM deallocated**」、つまり**割り当て解除済み**の状態となっていることが確認できます。ポータル上でも仮想マシンの状態は確認することができます。CloudShell を閉じます。
 
     ```PowerShell
-    Get-AzVM -name az900-10-vm1 -status | Format-Table -autosize
+    Get-AzVM -name az900-10-vm1 -status -ResourceGroupName AzureStudent## | Format-Table -autosize
     ```
 
 # タスク 4: Azure Advisor の推奨事項を確認する
