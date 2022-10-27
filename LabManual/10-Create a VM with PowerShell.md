@@ -42,11 +42,11 @@ wts:
     -Location "East US" `
     -VirtualNetworkName "az900-10-vnet1" `
     -SubnetName "subnet1" `
+    -Size "Standard_DS1_v2" `
     -SecurityGroupName "az900-10-nsg1" `
-    -PublicIpAddressName "az900-10-pip1"
     ```
     
-4. プロンプトが表示されたら、ユーザー名 (**Student**) とパスワード (**Pa55w.rd1234**) を入力します。これらは、その仮想マシンのローカル管理者アカウントとして構成されます。
+4. プロンプトが表示されたら、ユーザー名 (**Student**) とパスワード (**Pa55w.rd1234**) を入力します。仮想マシンのローカル管理者アカウントとして構成されます。
 
 5. VM が作成されたら、CloudShell を閉じます（CloudShell 右上の×ボタン）。
 

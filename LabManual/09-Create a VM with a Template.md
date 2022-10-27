@@ -30,11 +30,7 @@ wts:
     | 設定| 値|
     |----|----|
     | サブスクリプション | **Azure Pass - スポンサープラン** |
-<<<<<<< HEAD
     | リソース グループ | **AzureStudent##** |
-=======
-    | リソース グループ（新規作成） | **AzureStudent##** |
->>>>>>> 9eff86a4f9164f9bcf7dd12f03dee40aa5e9c70a
     | リージョン | **East US** |
     | Admin Username | **Student** |
     | Admin Password | **Pa55w.rd1234** |
