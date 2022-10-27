@@ -39,15 +39,15 @@ wts:
     az group list --output table
     ```
 
-3. Cloud Shell で以下のコマンドを入力し、最後の行を除くすべての行の最後がバックスラッシュ (`\`) 文字であることを確認します。同じ行にコマンド全体を入力する場合、バックスラッシュ文字は使用しないでください。 
+3. Cloud Shell で以下のコマンドを入力し、最後の行を除くすべての行の最後がバックスラッシュ (`\`) 文字であることを確認します。同じ行にコマンド全体を入力する場合、バックスラッシュ文字は使用しないでください（**##**の部分は自身の受講番号に書き換えて実行）。  
 
     ```cli
     az group create \
-    --name az900-11-rg1 \
+    --name AzureStudent## \
     --location EastUS2
     az vm create \
     --name az900-11-vm1 \
-    --resource-group az900-11-rg1 \
+    --resource-group AzureStudent## \
     --image UbuntuLTS \
     --location EastUS2 \
     --admin-username student \
@@ -73,22 +73,22 @@ wts:
 
 2. Cloud Shell 左上のドロップダウン メニューで、**「Bash」** が選択されていることを確認します。
 
-3. 次のコマンドを実行して、仮想マシンの名前、リソース グループ、場所、状態などの情報を取得します。**PowerState** が「**VM running**」であることを確認してください。
+3. 次のコマンドを実行して、仮想マシンの名前、リソース グループ、場所、状態などの情報を取得します。**PowerState** が「**VM running**」であることを確認してください（**##**の部分は自身の受講番号に書き換えて実行）。 
 
     ```cli
-    az vm show --resource-group az900-11-rg1 --name az900-11-vm1 --show-details --output table 
+    az vm show --resource-group AzureStudent## --name az900-11-vm1 --show-details --output table 
     ```
 
-4. 仮想マシンを停止します。仮想マシンの割り当てが解除されるまで請求が続行されることを示すメッセージが表示されます。 
+4. 仮想マシンを停止します。仮想マシンの割り当てが解除されるまで請求が続行されることを示すメッセージが表示されます（**##**の部分は自身の受講番号に書き換えて実行）。 
 
     ```cli
-    az vm stop --resource-group az900-11-rg1 --name az900-11-vm1
+    az vm stop --resource-group AzureStudent## --name az900-11-vm1
     ```
 
-5. 再度、仮想マシンの状態を確認します。**PowerState**が「**VM stopped**」となっていれば、VMが停止していることを確認できました。
+5. 再度、仮想マシンの状態を確認します。**PowerState**が「**VM stopped**」となっていれば、VMが停止していることを確認できました（**##**の部分は自身の受講番号に書き換えて実行）。 
 
     ```cli
-    az vm show --resource-group az900-11-rg1 --name az900-11-vm1 --show-details --output table 
+    az vm show --resource-group AzureStudent## --name az900-11-vm1 --show-details --output table 
     ```
 
 # タスク 4: Azure Advisor の推奨事項を確認する
@@ -114,5 +114,3 @@ wts:
 5. アラートを作成できることを確認してください。 
 
 Cloud Shell を構成し、Azure CLI を使用して仮想マシンを作成し、Azure CLI コマンドで練習し、Advisor の推奨事項を確認しました。
-
-**注**: 追加コストを回避するために、作成したリソース グループを削除できます。リソース グループを検索して選択し、作成したリソース グループをクリックして、「**リソース グループの削除**」をクリックします。リソース グループの名前を入力し、「**削除**」をクリックします。**通知**を監視して、削除の進行状況を確認します。

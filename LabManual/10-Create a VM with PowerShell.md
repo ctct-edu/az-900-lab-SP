@@ -33,11 +33,11 @@ wts:
     Get-AzResourceGroup | Format-Table
     ```
 
-3. 次のコマンドを実行して、仮想マシンを作成します。 
+3. 次のコマンドの内、「**AzureStudent##**」を自身の受講番号に変更してから実行して、仮想マシンを作成します。 
 
     ```PowerShell
     New-AzVm `
-    -ResourceGroupName "az900-10-rg1" `
+    -ResourceGroupName "AzureStudent##" `
     -Name "az900-10-vm1" `
     -Location "East US" `
     -VirtualNetworkName "az900-10-vnet1" `
@@ -67,20 +67,20 @@ wts:
 3. 次のコマンドを実行して、仮想マシンの名前、リソース グループ、場所、状態などの情報を取得します。**PowerState** が「**VM running**」になっていることを確認します。
 
     ```PowerShell
-    Get-AzVM -name az900-10-vm1 -status | Format-Table -autosize
+    Get-AzVM -name az900-10-vm1 -status -ResourceGroupName AzureStudent## | Format-Table -autosize
     ```
 
-4. 次のコマンドを使用して仮想マシンを停止します。 
+4. 次のコマンドを使用して仮想マシンを停止します（**##**の部分は自身の受講番号に書き換えて実行）。 
 
     ```PowerShell
-    Stop-AzVM -ResourceGroupName az900-10-rg1 -Name az900-10-vm1
+    Stop-AzVM -ResourceGroupName AzureStudent## -Name az900-10-vm1
     ```
 5. プロンプトが表示されたら、「**yes**」 と入力します。実行したコマンドが完了するのを待ちます。
 
 6. 再度、仮想マシンの状態を確認します。**PowerState** が「**VM deallocated**」、つまり**割り当て解除済み**の状態となっていることが確認できます。ポータル上でも仮想マシンの状態は確認することができます。CloudShell を閉じます。
 
     ```PowerShell
-    Get-AzVM -name az900-10-vm1 -status | Format-Table -autosize
+    Get-AzVM -name az900-10-vm1 -status -ResourceGroupName AzureStudent## | Format-Table -autosize
     ```
 
 # タスク 4: Azure Advisor の推奨事項を確認する
@@ -106,5 +106,3 @@ wts:
 5. アラートを作成できることを確認してください。 
 
 ここでは、Cloud Shell を構成し、PowerShell を使用して仮想マシンを作成し、PowerShell コマンドで練習し、Advisor の推奨事項を確認しました。
-
-**注**: 追加コストを回避するために、作成したリソース グループを削除できます。リソース グループを検索して選択し、作成したリソース グループをクリックして、「**リソース グループの削除**」をクリックします。リソース グループの名前を入力し、「**削除**」をクリックします。**通知**を監視して、削除の進行状況を確認します。
