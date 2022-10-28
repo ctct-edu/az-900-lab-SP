@@ -21,7 +21,7 @@ wts:
 
 4. 「**アカウントを選択する**」が表示されたら、**AzureStudent##**の資格情報を選択します。
 
-5. Azure portalが表示されたら、「**テンプレートの編集**」をクリックします。ARMテンプレートは、JSON 形式で記述されています。パラメーターと変数を確認して変更する必要があります。仮想マシン名のパラメーター(vmName)を見つけます。「**defaultValue**」を 「**myVMTemplate##**」 に変更して、「**保存**」をクリックします。 
+5. Azure portalが表示されたら、「**テンプレートの編集**」をクリックします。ARMテンプレートは、JSON 形式で記述されています。パラメーターと変数を確認して変更する必要があります。仮想マシン名のパラメーター(vmName)を見つけます。「**defaultValue**」を 「**myVMTemplate##**」 （##は受講番号）に変更して、「**保存**」をクリックします。 
 
     ![VM 名が変更されたテンプレートのスクリーンショット。](./images/0901.png)
 
@@ -35,8 +35,9 @@ wts:
     | Admin Username | **Student** |
     | Admin Password | **Pa55w.rd1234** |
     | Dns Label Prefix | **myvmtemplate##$$$$** |
-    | OS バージョン | **2019-datacenter-gensecond** |
-
+    | Public Ip Name | **myPublicIP##$$$$** |
+    | Vm Size | **Standard_DS1_v2** |
+    
     注：##は受講番号を、$$$$は本日の月日を入力します。 (例：受講番号01、9月30日の場合→myvmtemplate010930)
 
 
