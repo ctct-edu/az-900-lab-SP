@@ -42,18 +42,16 @@ wts:
 3. Cloud Shell で以下のコマンドを入力し、最後の行を除くすべての行の最後がバックスラッシュ (`\`) 文字であることを確認します。同じ行にコマンド全体を入力する場合、バックスラッシュ文字は使用しないでください（**##**の部分は自身の受講番号に書き換えて実行）。  
 
     ```cli
-    az group create \
-    --name AzureStudent## \
-    --location EastUS2
     az vm create \
     --name az900-11-vm1 \
     --resource-group AzureStudent## \
     --image UbuntuLTS \
-    --location EastUS2 \
+    --location EastUS \
+    --size Standard_DS1_v2 \
     --admin-username student \
     --admin-password Pa55w.rd1234
     ```
-
+    
     > **注**: Windows コンピューターのコマンド ラインを使用している場合は、バックスラッシュ (`\`) 文字をキャレット (`^`) 文字で置き換えます。
 
     **注**: コマンドの完了には 2 分から 3 分かかります。このコマンドは、仮想マシンと、関連するストレージ、ネットワーク、セキュリティ リソースなどのさまざまなリソースを作成します。仮想マシンのデプロイが完了するまで、次の手順に進まないでください。 
