@@ -18,7 +18,7 @@ wts:
     |  -- | -- |
     | サブスクリプション | **Azure Pass - スポンサープラン** |
     | リソース グループ    | **AzureStudent##**                                       |
-    | 仮想マシン名 | **az900-01-vm##** |
+    | 仮想マシン名 | **az900-01-vm1** |
     | 地域 | **(US) East US** or **(US) West US** |
     | 可用性オプション | インフラストラクチャ冗長は必要ありません |
     | イメージ | **Windows Server 2022 Datacenter: Azure Edition - Gen2** |

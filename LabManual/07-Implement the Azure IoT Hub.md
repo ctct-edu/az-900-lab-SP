@@ -20,7 +20,7 @@ wts:
     | 設定 | 値 |
     |--|--|
     | サブスクリプション | **Azure Pass - スポンサープラン** |
-    | リソース グループ（新規作成） | **AzureStudent##** |
+    | リソース グループ | **AzureStudent##** |
     | IoT Hub 名 | **my-hub-group##$$$$** |
     | 領域 | **East US** |
 

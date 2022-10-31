@@ -20,7 +20,7 @@ wts:
     | 設定 | 値 |
     | --- | --- |
     | サブスクリプション | **Azure Pass - スポンサープラン** |
-    | リソース グループ（新規作成） | **AzureStudent##** |
+    | リソース グループ | **AzureStudent##** |
     | 名前 | **vnet1** |
     | 地域 | **East US** |
     
@@ -40,7 +40,7 @@ wts:
    | サブスクリプション | **Azure Pass - スポンサープラン** |
    | リソース グループ | **AzureStudent##** |
    | 仮想マシン名 | **az900-04-vm1** |
-   | 地域 | **(US) East US** |
+   | 地域 | **(US) East US** or **(US) West US** |
    | イメージ | **Windows Server 2022 Datacenter: Azure Edition - Gen2** |
    | サイズ | **Standard_DS1_v2** |
    | ユーザー名| **Student** |
@@ -63,7 +63,7 @@ wts:
     | サブスクリプション   | **Azure Pass - スポンサープラン**                        |
     | リソース グループ    | **AzureStudent##**                                       |
     | 仮想マシン名         | **az900-04-vm2**                                         |
-    | 地域                 | **(US) East US**                                         |
+    | 地域                 | **(US) East US** or **(US) West US**                     |
     | イメージ             | **Windows Server 2022 Datacenter: Azure Edition - Gen2** |
     | サイズ               | **Standard_DS1_v2**                                      |
     | ユーザー名           | **Student**                                              |
