@@ -31,12 +31,11 @@ wts:
     |----|----|
     | サブスクリプション | **Azure Pass - スポンサープラン** |
     | リソース グループ | **AzureStudent##** |
-    | リージョン | **East US** |
+    | リージョン | **East US** or **West US** |
     | Admin Username | **Student** |
     | Admin Password | **Pa55w.rd1234** |
     | Dns Label Prefix | **myvmtemplate##$$$$** |
     | Public Ip Name | **myPublicIP##$$$$** |
-    | Vm Size | **Standard_DS1_v2** |
     
     注：##は受講番号を、$$$$は本日の月日を入力します。 (例：受講番号01、9月30日の場合→myvmtemplate010930)
 

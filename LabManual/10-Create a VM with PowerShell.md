@@ -33,13 +33,13 @@ wts:
     Get-AzResourceGroup | Format-Table
     ```
 
-3. 次のコマンドの内、「**AzureStudent##**」を自身の受講番号に変更してから実行して、仮想マシンを作成します。 
+3. 次のコマンドの内、「**AzureStudent##**」を自身の受講番号に、**"Location"**を**East US**もしくは**West US**に変更してから実行して、仮想マシンを作成します。 
 
     ```PowerShell
     New-AzVm `
     -ResourceGroupName "AzureStudent##" `
     -Name "az900-10-vm1" `
-    -Location "East US" `
+    -Location "[region]" `
     -VirtualNetworkName "az900-10-vnet1" `
     -SubnetName "subnet1" `
     -Size "Standard_DS1_v2" `

@@ -20,7 +20,7 @@ wts:
     | 設定 | 値 |
     | -- | -- |
     | サブスクリプション | **Azure Pass - スポンサープラン** |
-    | リソース グループ | **RBACAzureStudent##** |
+    | リソース グループ（新規作成） | **RBACAzureStudent##** |
     | リージョン | **(US) East US** |
 
 
