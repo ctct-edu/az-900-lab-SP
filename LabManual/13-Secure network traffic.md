@@ -9,7 +9,7 @@ wts:
 
 # タスク 1: 仮想マシンを作成する
 
-このタスクでは、Windows Server 2019 Datacenter 仮想マシンを作成します。 
+このタスクでは、Windows Server 2022 Datacenter 仮想マシンを作成します。 
 
 1. Azure portal　([https://portal.azure.com](https://portal.azure.com))にサインインします。
 
